@@ -1,7 +1,6 @@
-# SkillSpring: GUVI-style AI Interview Coach + ATS Resume Builder
+# SkillSpring: AI Interview Coach + ATS Resume Builder
 
-This is a starter implementation for adding an AI interview and ATS resume experience to an existing React + Vite LMS. It recreates the interaction pattern, not GUVI's proprietary source code or exact private stack.
-
+This is a starter implementation for adding an AI interview and ATS resume experience to an existing React + Vite LMS.
 ## Included
 - React + Vite responsive dashboard
 - CSS animated avatar and browser text-to-speech
