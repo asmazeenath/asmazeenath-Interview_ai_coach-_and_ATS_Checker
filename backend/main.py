@@ -6,7 +6,16 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
-
+app=FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://asmazeenath-interview-ai-coach-and-sage.vercel.app/"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 load_dotenv()
 DB_PATH = os.getenv("DATABASE_PATH", "./interviews.db")
 MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
