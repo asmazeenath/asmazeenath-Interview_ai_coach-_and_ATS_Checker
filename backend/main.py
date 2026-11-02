@@ -19,7 +19,6 @@ app.add_middleware(
 load_dotenv()
 DB_PATH = os.getenv("DATABASE_PATH", "./interviews.db")
 MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
-app = FastAPI(title="SkillSpring Interview and ATS API", version="1.0.0")
 origins = [x.strip() for x in os.getenv("FRONTEND_ORIGINS", "http://localhost:5173").split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
