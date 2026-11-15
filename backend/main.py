@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 
 from google import genai
 from docx import Document
-import fitz
+import pymupdf
 
 load_dotenv()
 
@@ -740,7 +740,7 @@ def extract_resume_text(filename, content):
         return content.decode("utf-8", errors="ignore")
 
     if extension == "pdf":
-        document = fitz.open(
+        document = pymupdf.open(
             stream=content,
             filetype="pdf"
         )
