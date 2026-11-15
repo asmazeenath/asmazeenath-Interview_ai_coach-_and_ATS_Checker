@@ -24,7 +24,7 @@ GEMINI_MODEL =("gemini-2.5-flash")
 
 FRONTEND_ORIGINS = os.getenv(
     "FRONTEND_ORIGINS",
-    "https://asmazeenath-interview-ai-coach-and-ats-checker-1lx3-cb9yt1jwi.vercel.app/,http://localhost:5173/"
+    "https://asmazeenath-interview-ai-coach-and-ats-checker-j2kh-qz0gfk510.vercel.app/,http://localhost:5173/"
 )
 
 origins = [
