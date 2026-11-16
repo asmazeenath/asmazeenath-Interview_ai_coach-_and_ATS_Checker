@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
 
-const API = import.meta.env.VITE_API_URL || "https://asmazeenath-interview-ai-coach-and-sage.vercel.app/";
+const API = import.meta.env.VITE_API_URL || "https://asmazeenath-interview-ai-coach-and-rouge.vercel.app/";
 
 const QUESTION_BANK = {
   "AI/ML Engineer": [
