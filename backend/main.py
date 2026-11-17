@@ -34,7 +34,7 @@ origins = [
     x.strip().rstrip("/")
     for x in os.getenv(
         "FRONTEND_ORIGINS",
-        "http://localhost:5173,https://asmazeenath-interview-ai-coach-and-rouge.vercel.app/"
+        "http://localhost:5173,https://asmazeenath-interview-ai-coach-and-git-7a28bd-asmazeenath9-9322.vercel.app/"
     ).split(",")
     if x.strip()
 ]
