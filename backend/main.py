@@ -30,21 +30,12 @@ app = FastAPI(title="SkillSpring Interview and ATS API", version="1.0.0")
 
 # CORS CONFIGURATION
 
-origins = [
-    x.strip().rstrip("/")
-    for x in os.getenv(
-        "FRONTEND_ORIGINS",
-        "http://localhost:5173,https://asmazeenath-interview-ai-coach-and-git-7a28bd-asmazeenath9-9322.vercel.app/"
-    ).split(",")
-    if x.strip()
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["https://asmazeenath-interview-ai-coach-and-delta.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
 
 
