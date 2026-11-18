@@ -25,7 +25,7 @@ MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
 
 # FASTAPI APPLICATION
 
-app = FastAPI(title="SkillSpring Interview and ATS API", version="1.0.0")
+app = FastAPI(title="RaushByte Interview and ATS API", version="1.0.0")
 
 
 # CORS CONFIGURATION
@@ -197,7 +197,7 @@ def fallback_evaluation(answers):
 def root():
     return {
         "status": "ok",
-        "service": "SkillSpring Interview and ATS API"
+        "service": "RaushByte Interview and ATS API"
     }
 
 
