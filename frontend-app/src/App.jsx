@@ -832,7 +832,7 @@ async function startCamera() {
         <div className="brand">
           <span className="brand-mark">✦</span>
           <span>
-            SkillSpring
+            RaushByte
             <small>AI CAREER STUDIO</small>
           </span>
         </div>
